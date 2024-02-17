@@ -59,9 +59,10 @@ const Section02 = () => {
 
   const randomLetters = () => {
     setArray(currentArray => {
-      return currentArray.map(element => {
-        return String.fromCharCode(97 + Math.floor(Math.random() * 26));
-      });
+      return [
+        ...currentArray,
+        String.fromCharCode(97 + Math.floor(Math.random() * 26)).toUpperCase()
+      ];
     });
   };
 
