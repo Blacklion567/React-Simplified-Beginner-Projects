@@ -8,6 +8,10 @@ export default function Section01() {
 
   const [show, setShow] = useState(true);
 
+  const toggleShow = () => {
+    setShow(prev => !prev);
+  };
+
   return (
     <div>
       {show ? <UserCard
@@ -21,7 +25,7 @@ export default function Section01() {
         address={user.address} />}
 
 
-      <button onClick={() => setShow(false)}>Click Me</button>
+      <button onClick={toggleShow}>Click Me</button>
 
       {/* <UserCard
         name={user.name}
