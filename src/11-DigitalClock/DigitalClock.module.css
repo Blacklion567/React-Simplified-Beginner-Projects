@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+body {
+  background-color: black;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock-container {
+  backdrop-filter: blur(5px);
+  width: 100vw;
+}
+
+span {
+  color: #fefefe;
+  font-size: 6rem;
+  font-family: monospace;
+  text-align: ;
+}
