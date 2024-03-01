@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './DigitalClock.module.css';
 
 // Function to create a DigitalClock component
-function DigitalClock() {
+function Section11() {
 
   // State to store the current time
   const [time, setTime] = useState(
@@ -71,4 +71,4 @@ function DigitalClock() {
 }
 
 // Export the DigitalClock component
-export default DigitalClock;
+export default Section11;
