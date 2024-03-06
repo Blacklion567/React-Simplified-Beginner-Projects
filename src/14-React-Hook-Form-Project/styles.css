@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 200px;
+  width: 100px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.input {
+  display: block;
+
+  width: 100px;
+  min-width: 200px;
+}
+
+.form-group.error .input,
+.form-group.error .react-select__control {
+  border-color: hsl(0, 100%, 70%);
+  color: hsl(0, 100%, 70%);
+  background: hsl(0, 100%, 95%);
+
+}
+
+#country {
+  width: 100% auto;
+  min-width: 200px;
+}
+
+.form-group.error .label {
+  color: hsl(0, 100%, 70%);
+}
+
+.input:focus {
+  border-color: hsl(200, 100%, 50%);
+}
+
+.btn {
+  all: unset;
+  border: 0.05em solid #888;
+  background-color: #bbb;
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #aaa;
+}
+
+.btn:focus {
+  outline: auto;
+}
+
+.form-group.error .msg {
+  font-size: 0.8em;
+  color: hsl(0, 100%, 70%);
+}
